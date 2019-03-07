@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TeamViewer</title>
+        <link rel="stylesheet" href="/style.css" type="text/css">
+        <link rel="icon" href="/compass.png">
+    </head>
+    <body>
+        <img src="/compass.png" class="logo">
+        <h1 class="title">TeamViewer</h1>
+        <h2 class="sub">What is this?</h2>
+        <p>This is a app built with node.js to help organise groups!</p>
+        <div class="card">
+            <h1>Sanjeev</h1>
+            <h3>Place</h3>
+            <p class="where"> <%= places.person1 %> </p>
+            <form action="/change1" method="POST">
+                <select name="place1">
+                    <option value="">Please select...</option>
+                    <option value="1">Home</option>
+                    <option value="2">Work</option>
+                    <option value="3">Other</option>
+                </select>
+                <input type="submit">
+            </form>
+        </div>
+        <div class="card">
+            <h1>Gavin</h1>
+            <h3>Place</h3>
+            <p class="where"> <%= places.person2 %> </p>
+            <form action="/change2" method="POST">
+                <select name="place1">
+                    <option value="">Please select...</option>
+                    <option value="1">Home</option>
+                    <option value="2">Work</option>
+                    <option value="3">Other</option>
+                </select>
+                <input type="submit">
+            </form>
+        </div>
+        <div class="card">
+            <h1>Mamatha</h1>
+            <h3>Place</h3>
+            <p class="where"> <%= places.person3 %> </p>
+            <form action="/change3" method="POST">
+                <select name="place1">
+                    <option value="">Please select...</option>
+                    <option value="1">Home</option>
+                    <option value="2">Work</option>
+                    <option value="3">Other</option>
+                </select>
+                <input type="submit">
+            </form>
+        </div>
+        <div class="card">
+            <h1>Mike</h1>
+            <h3>Place</h3>
+            <p class="where"> <%= places.person4 %> </p>
+            <form action="/change4" method="POST">
+                <select name="place1">
+                    <option value="">Please select...</option>
+                    <option value="1">Home</option>
+                    <option value="2">Work</option>
+                    <option value="3">Other</option>
+                </select>
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "teamviewer",
+  "version": "1.0.0",
+  "description": "A app to know where your team is at all times. They can update their positions accordingly.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hacker719/TeamViewer.git"
+  },
+  "keywords": [
+    "Team",
+    "hacker719",
+    "viewer",
+    "schedu"
+  ],
+  "author": "Hacker719",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hacker719/TeamViewer/issues"
+  },
+  "homepage": "https://github.com/Hacker719/TeamViewer#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}

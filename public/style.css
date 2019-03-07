@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Montserrat|Sniglet');
+body,html {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('https://www.plitvice-etnogarden.com/wp-content/uploads/2018/02/Etno-Garden-Plitvice-Lakes-Team-Building-ruke.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.title {
+    font-size: 50px;
+    font-family: 'Sniglet', cursive;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+}
+.sub {
+    color: black;
+}
+p {
+    color: black;
+}
+h1,h2,h3,h4 {
+    font-family: 'Bitter', serif;
+}
+.logo {
+    height: 60px;
+    float: left;
+    padding:10px;
+}
+.where {
+    background-color: beige;
+    border-radius: 10px;
+    color: black;
+}
+.card {
+    background-color: gray;
+    display: inline-block;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 30px;
+}
