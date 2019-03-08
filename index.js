@@ -6,7 +6,7 @@ app.set('view engine','ejs')
 app.use(express.static(__dirname + '/public'));
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
-var places = {'person1':'Pleasanton','person2':'Pleasanton','person3':'Pleasanton','person4':'Pleasanton','person5':'Pleasanton','person6':'Pleasanton','person7':'Pleasanton','person8':'Pleasanton','person9':'Pleasanton','person10':'Pleasanton','person11':'Pleasanton','person12':'Pleasanton'}
+var places = {'person1':'Pleasanton','person2':'Pleasanton','person3':'Pleasanton','person4':'Pleasanton','person5':'Pleasanton','person6':'Pleasanton','person7':'Pleasanton','person8':'Pleasanton','person9':'Pleasanton','person10':'Pleasanton','person11':'Pleasanton','person12':'Pleasanton','person13':'Pleasanton'}
 app.get('/', function (req, res) {
       res.render('index', {places : places, date : today});
 });
@@ -160,6 +160,17 @@ app.post('/change12', function (req,res) {
         places.person12 = 'Foster City';
     } else if (newplace == 3) {
         places.person12 = 'Other';
+    }
+    res.redirect('/');
+});
+app.post('/change13', function (req,res) {
+    var newplace = req.body.place1;
+    if (newplace == 1) {
+        places.person13 = 'Pleasanton';
+    } else if (newplace == 2) {
+        places.person13 = 'Foster City';
+    } else if (newplace == 3) {
+        places.person13 = 'Other';
     }
     res.redirect('/');
 });
