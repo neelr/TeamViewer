@@ -6,6 +6,7 @@ app.use(express.static(__dirname + '/public'));
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 var places = {'person1':'Home','person2':'Home','person3':'Home','person4':'Home'}
+var port_number = server.listen(process.env.PORT || 3000);
 app.get('/', function (req, res) {
       res.render('index', {places : places});
 });
@@ -74,6 +75,6 @@ app.post('/change4', function (req,res) {
     }
     res.redirect('/');
 });
-app.listen(3000,function() {
+app.listen(port_number,function() {
     console.log('TeamViewer has started to listen on port 3000')
 })
