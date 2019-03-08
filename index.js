@@ -1,4 +1,5 @@
 let express = require('express');
+var nodemailer = require('nodemailer');
 var app = express();
 app.set('view engine','ejs')
 app.use(express.static(__dirname + '/public'));
@@ -8,6 +9,27 @@ var places = {'person1':'Home','person2':'Home','person3':'Home','person4':'Home
 app.get('/', function (req, res) {
       res.render('index', {places : places});
 });
+var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'tectonroot@gmail.com',
+      pass: 'tectonisgood'
+    }
+  });
+var mailOptions = {
+    from: 'no-reply@teamviewer.com',
+    to: 'neel.redkar@outlook.com',
+    subject: 'Server startup Complete',
+    text: 'That was easy!'
+};
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
+
 app.post('/change1', function (req,res) {
     var newplace = req.body.place1;
     if (newplace == 1) {

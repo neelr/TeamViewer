@@ -18,8 +18,13 @@ body,html {
     border-radius: 10px;
     border-style: solid;
 }
-.sub {
+.titl {
+    font-family: 'Sniglet', cursive;
+    background-color: white;
     color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
 }
 p {
     color: black;
@@ -38,6 +43,8 @@ h1,h2,h3,h4 {
     color: black;
 }
 .card {
+    border-style: solid;
+    border-color: orange;
     background-color: gray;
     display: inline-block;
     padding: 50px;
