@@ -6,7 +6,9 @@ app.set('view engine','ejs')
 app.use(express.static(__dirname + '/public'));
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
-var places = {'person1':'Pleasanton','person2':'Pleasanton','person3':'Pleasanton','person4':'Pleasanton','person5':'Pleasanton','person6':'Pleasanton','person7':'Pleasanton','person8':'Pleasanton','person9':'Pleasanton','person10':'Pleasanton','person11':'Pleasanton','person12':'Pleasanton','person13':'Pleasanton'}
+fs = require('fs')
+var data = fs.readFileSync('place.json')
+var places = JSON.parse(data)
 app.get('/', function (req, res) {
       res.render('index', {places : places, date : today});
 });
@@ -40,6 +42,10 @@ app.post('/change1', function (req,res) {
     } else if (newplace == 3) {
         places.person1 = 'Other';
     }
+    data = JSON.stringify(places)
+    fs.writeFile('place.json',data, function () {
+        console.log('Logged to json')
+    })
     res.redirect('/');
 });
 app.post('/change2', function (req,res) {
@@ -51,6 +57,10 @@ app.post('/change2', function (req,res) {
     } else if (newplace == 3) {
         places.person2 = 'Other';
     }
+    data = JSON.stringify(places)
+    fs.writeFile('place.json',data, function () {
+        console.log('Logged to json')
+    })
     res.redirect('/');
 });
 app.post('/change3', function (req,res) {
@@ -62,6 +72,10 @@ app.post('/change3', function (req,res) {
     } else if (newplace == 3) {
         places.person3 = 'Other';
     }
+    data = JSON.stringify(places)
+    fs.writeFile('place.json',data, function () {
+        console.log('Logged to json')
+    })
     res.redirect('/');
 });
 app.post('/change4', function (req,res) {
@@ -73,6 +87,10 @@ app.post('/change4', function (req,res) {
     } else if (newplace == 3) {
         places.person4 = 'Other';
     }
+    data = JSON.stringify(places)
+    fs.writeFile('place.json',data, function () {
+        console.log('Logged to json')
+    })
     res.redirect('/');
 });
 app.post('/change5', function (req,res) {
@@ -84,6 +102,10 @@ app.post('/change5', function (req,res) {
     } else if (newplace == 3) {
         places.person5 = 'Other';
     }
+    data = JSON.stringify(places)
+    fs.writeFile('place.json',data, function () {
+        console.log('Logged to json')
+    })
     res.redirect('/');
 });
 app.post('/change6', function (req,res) {
@@ -95,6 +117,10 @@ app.post('/change6', function (req,res) {
     } else if (newplace == 3) {
         places.person6 = 'Other';
     }
+    data = JSON.stringify(places)
+    fs.writeFile('place.json',data, function () {
+        console.log('Logged to json')
+    })
     res.redirect('/');
 });
 app.post('/change7', function (req,res) {
@@ -106,6 +132,10 @@ app.post('/change7', function (req,res) {
     } else if (newplace == 3) {
         places.person7 = 'Other';
     }
+    data = JSON.stringify(places)
+    fs.writeFile('place.json',data, function () {
+        console.log('Logged to json')
+    })
     res.redirect('/');
 });
 app.post('/change8', function (req,res) {
@@ -117,6 +147,10 @@ app.post('/change8', function (req,res) {
     } else if (newplace == 3) {
         places.person8 = 'Other';
     }
+    data = JSON.stringify(places)
+    fs.writeFile('place.json',data, function () {
+        console.log('Logged to json')
+    })
     res.redirect('/');
 });
 app.post('/change9', function (req,res) {
@@ -128,6 +162,10 @@ app.post('/change9', function (req,res) {
     } else if (newplace == 3) {
         places.person9 = 'Other';
     }
+    data = JSON.stringify(places)
+    fs.writeFile('place.json',data, function () {
+        console.log('Logged to json')
+    })
     res.redirect('/');
 });
 app.post('/change10', function (req,res) {
@@ -139,6 +177,10 @@ app.post('/change10', function (req,res) {
     } else if (newplace == 3) {
         places.person10 = 'Other';
     }
+    data = JSON.stringify(places)
+    fs.writeFile('place.json',data, function () {
+        console.log('Logged to json')
+    })
     res.redirect('/');
 });
 app.post('/change11', function (req,res) {
@@ -150,6 +192,10 @@ app.post('/change11', function (req,res) {
     } else if (newplace == 3) {
         places.person11 = 'Other';
     }
+    data = JSON.stringify(places)
+    fs.writeFile('place.json',data, function () {
+        console.log('Logged to json')
+    })
     res.redirect('/');
 });
 app.post('/change12', function (req,res) {
@@ -161,6 +207,10 @@ app.post('/change12', function (req,res) {
     } else if (newplace == 3) {
         places.person12 = 'Other';
     }
+    data = JSON.stringify(places)
+    fs.writeFile('place.json',data, function () {
+        console.log('Logged to json')
+    })
     res.redirect('/');
 });
 app.post('/change13', function (req,res) {
@@ -172,6 +222,10 @@ app.post('/change13', function (req,res) {
     } else if (newplace == 3) {
         places.person13 = 'Other';
     }
+    data = JSON.stringify(places)
+    fs.writeFile('place.json',data, function () {
+        console.log('Logged to json')
+    })
     res.redirect('/');
 });
 app.listen(process.env.PORT || 3000,function() {
