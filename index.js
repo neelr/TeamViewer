@@ -25,13 +25,7 @@ var mailOptions = {
     subject: 'Server startup Complete',
     text: 'That was easy!'
 };
-transporter.sendMail(mailOptions, function(error, info){
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Email sent: ' + info.response);
-  }
-});
+
 
 app.post('/change1', function (req,res) {
     var newplace = req.body.place1;
