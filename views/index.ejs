@@ -16,7 +16,15 @@
     </div>
     <% var today = String(parseInt(date.getMonth())+1)+'-'+date.getDate()+'-'+date.getFullYear(); %>
     <h1 class="date">Date: <%= today %></h1>
-    <div class="card">
+    <% if (places.person1=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person1=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person1=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
         <h1>Gavin Choy</h1>
         <h3>Place</h3>
         <p class="where"> <%= places.person1 %> </p>
@@ -26,12 +34,21 @@
                 <option value="">Please select...</option>
                 <option value="1">Pleasanton</option>
                 <option value="2">Foster City</option>
+                <option value="0">Home</option>
                 <option value="3">Other</option>
             </select>
             <input type="submit">
         </form>
     </div>
-    <div class="card">
+    <% if (places.person2=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person2=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person2=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
         <h1>Guo-Liang Yu</h1>
         <h3>Place</h3>
         <p class="where"> <%= places.person2 %> </p>
@@ -41,12 +58,21 @@
                 <option value="">Please select...</option>
                 <option value="1">Pleasanton</option>
                 <option value="2">Foster City</option>
+                <option value="0">Home</option>
                 <option value="3">Other</option>
             </select>
             <input type="submit">
         </form>
     </div>
-    <div class="card">
+    <% if (places.person3=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person3=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person3=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
         <h1>Sanjeev Redkar</h1>
         <h3>Place</h3>
         <p class="where"> <%= places.person3 %> </p>
@@ -56,12 +82,21 @@
                 <option value="">Please select...</option>
                 <option value="1">Pleasanton</option>
                 <option value="2">Foster City</option>
+                <option value="0">Home</option>
                 <option value="3">Other</option>
             </select>
             <input type="submit">
         </form>
     </div>
-    <div class="card">
+    <% if (places.person4=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person4=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person4=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
         <h1>Mamatha Reddy</h1>
         <h3>Place</h3>
         <p class="where"> <%= places.person4 %> </p>
@@ -71,12 +106,21 @@
                 <option value="">Please select...</option>
                 <option value="1">Pleasanton</option>
                 <option value="2">Foster City</option>
+                <option value="0">Home</option>
                 <option value="3">Other</option>
             </select>
             <input type="submit">
         </form>
     </div>
-    <div class="card">
+    <% if (places.person5=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person5=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person5=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
         <h1>Shelly Nigam</h1>
         <h3>Place</h3>
         <p class="where"> <%= places.person5 %> </p>
@@ -86,12 +130,21 @@
                 <option value="">Please select...</option>
                 <option value="1">Pleasanton</option>
                 <option value="2">Foster City</option>
+                <option value="0">Home</option>
                 <option value="3">Other</option>
             </select>
             <input type="submit">
         </form>
     </div>
-    <div class="card">
+    <% if (places.person6=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person6=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person6=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
         <h1>Debra Vallner</h1>
         <h3>Place</h3>
         <p class="where"> <%= places.person6 %> </p>
@@ -101,12 +154,21 @@
                 <option value="">Please select...</option>
                 <option value="1">Pleasanton</option>
                 <option value="2">Foster City</option>
+                <option value="0">Home</option>
                 <option value="3">Other</option>
             </select>
             <input type="submit">
         </form>
     </div>
-    <div class="card">
+    <% if (places.person7=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person7=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person7=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
         <h1>Lenilyn Espiritu</h1>
         <h3>Place</h3>
         <p class="where"> <%= places.person7 %> </p>
@@ -116,12 +178,21 @@
                 <option value="">Please select...</option>
                 <option value="1">Pleasanton</option>
                 <option value="2">Foster City</option>
+                <option value="0">Home</option>
                 <option value="3">Other</option>
             </select>
             <input type="submit">
         </form>
     </div>
-    <div class="card">
+    <% if (places.person8=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person8=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person8=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
         <h1>Sandra Pajarillo</h1>
         <h3>Place</h3>
         <p class="where"> <%= places.person8 %> </p>
@@ -131,12 +202,21 @@
                 <option value="">Please select...</option>
                 <option value="1">Pleasanton</option>
                 <option value="2">Foster City</option>
+                <option value="0">Home</option>
                 <option value="3">Other</option>
             </select>
             <input type="submit">
         </form>
     </div>
-    <div class="card">
+    <% if (places.person9=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person9=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person9=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
         <h1>Joe Prokop</h1>
         <h3>Place</h3>
         <p class="where"> <%= places.person9 %> </p>
@@ -146,12 +226,21 @@
                 <option value="">Please select...</option>
                 <option value="1">Pleasanton</option>
                 <option value="2">Foster City</option>
+                <option value="0">Home</option>
                 <option value="3">Other</option>
             </select>
             <input type="submit">
         </form>
     </div>
-    <div class="card">
+    <% if (places.person10=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person10=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person10=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
         <h1>Liz Bergen</h1>
         <h3>Place</h3>
         <p class="where"> <%= places.person10 %> </p>
@@ -161,12 +250,21 @@
                 <option value="">Please select...</option>
                 <option value="1">Pleasanton</option>
                 <option value="2">Foster City</option>
+                <option value="0">Home</option>
                 <option value="3">Other</option>
             </select>
             <input type="submit">
         </form>
     </div>
-    <div class="card">
+    <% if (places.person11=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person11=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person11=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
         <h1>Wilson Cheung</h1>
         <h3>Place</h3>
         <p class="where"> <%= places.person11 %> </p>
@@ -176,12 +274,21 @@
                 <option value="">Please select...</option>
                 <option value="1">Pleasanton</option>
                 <option value="2">Foster City</option>
+                <option value="0">Home</option>
                 <option value="3">Other</option>
             </select>
             <input type="submit">
         </form>
     </div>
-    <div class="card">
+    <% if (places.person12=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person12=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person12=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
         <h1>Raymond Low</h1>
         <h3>Place</h3>
         <p class="where"> <%= places.person12 %> </p>
@@ -191,12 +298,21 @@
                 <option value="">Please select...</option>
                 <option value="1">Pleasanton</option>
                 <option value="2">Foster City</option>
+                <option value="0">Home</option>
                 <option value="3">Other</option>
             </select>
             <input type="submit">
         </form>
     </div>
-    <div class="card">
+    <% if (places.person13=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person13=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person13=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
         <h1>Vicky Fernandez</h1>
         <h3>Place</h3>
         <p class="where"> <%= places.person13 %> </p>
@@ -206,6 +322,31 @@
                 <option value="">Please select...</option>
                 <option value="1">Pleasanton</option>
                 <option value="2">Foster City</option>
+                <option value="0">Home</option>
+                <option value="3">Other</option>
+            </select>
+            <input type="submit">
+        </form>
+    </div>
+     <% if (places.person14=="Foster City") { %>
+    <div style="background-color:green;" class="card">
+    <% } else if (places.person14=="Pleasanton") { %>
+        <div style="background-color:royalblue;" class="card">
+    <% } else if (places.person14=="Home") { %>
+        <div style="background-color:brown;" class="card">
+    <% } else { %>
+        <div class="card">
+            <% } %>
+        <h1>Maggie Wang</h1>
+        <h3>Place</h3>
+        <p class="where"> <%= places.person14 %> </p>
+        <h3>Change Place</h3>
+        <form action="/change14" method="POST">
+            <select name="place1">
+                <option value="">Please select...</option>
+                <option value="1">Pleasanton</option>
+                <option value="2">Foster City</option>
+                <option value="0">Home</option>
                 <option value="3">Other</option>
             </select>
             <input type="submit">
